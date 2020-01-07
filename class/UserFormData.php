@@ -1,8 +1,8 @@
 <?php
 
-use Traits\ToArray as MyTrait;
-
 include_once 'traits/ToArray.php';
+
+use Traits\ToArray as MyTrait;
 
 class UserFormData
 {
