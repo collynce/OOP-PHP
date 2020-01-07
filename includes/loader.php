@@ -1,24 +1,19 @@
 <?php
 
-//Loader function
 
 function auto_load_classes($class)
 {
-    $file = 'class'. '\\' . $class . '.php';
-    $file = str_replace('\\', DIRECTORY_SEPARATOR, $file);
-    if (file_exists($file)) {
-        include $file;
-    }
+    $className = explode('\\', $class);
+    $class = end($className);
+    include 'class/' . $class . '.php';
 
 }
 
 function auto_load_traits($trait)
 {
-    $file = 'traits'. '\\' . $trait . '.php';
-    $file = str_replace('\\', DIRECTORY_SEPARATOR, $file);
-    if (file_exists($file)) {
-        include $file;
-    }
+    $className = explode('\\', $trait);
+    $trait = end($className);
+    include 'traits/' . $trait . '.php';
 
 }
 

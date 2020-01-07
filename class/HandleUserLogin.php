@@ -1,4 +1,6 @@
 <?php
+namespace UserLogin;
+use Details\UserDetails;
 class HandleUserLogin extends UserDetails
 {
     private $password;

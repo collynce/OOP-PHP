@@ -1,6 +1,5 @@
 <?php
-
-
+namespace Details;
 class UserDetails
 {
     public $email = 'Collins';

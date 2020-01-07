@@ -1,7 +1,7 @@
 <?php
 
-namespace User;
 use Traits\ToArray;
+
 include_once 'traits/ToArray.php';
 
 class UserFormData
