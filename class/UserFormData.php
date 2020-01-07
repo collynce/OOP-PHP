@@ -1,12 +1,12 @@
 <?php
 
-use Traits\ToArray;
+use Traits\ToArray as MyTrait;
 
 include_once 'traits/ToArray.php';
 
 class UserFormData
 {
-    use ToArray;
+    use MyTrait;
     public $name;
     public $email;
     public $description;
