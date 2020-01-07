@@ -1,6 +1,7 @@
 <?php
 
 namespace Movies;
+
 class GetMovies
 {
     public $name;

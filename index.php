@@ -17,7 +17,6 @@ echo $users->email . "<br><br>";
 echo "<br><br>";
 
 
-
 print '// Calling a Class method';
 $users->SetUserDetails('Kiprotich', 'rono', 'Web Developer');
 
@@ -39,7 +38,6 @@ $user_email = 'Collins';
 print_r($login->checkIfRegistered($user_email));
 
 //Traits
-
 $details = new UserFormData();
 
 $details->getName('Collins');
@@ -51,6 +49,8 @@ $details->getDescription('Software Engineer');
 var_dump($details->toArrays());
 var_dump($details->toJSON());
 
+
+//Interface
 $users = new Interfaces(15);
 
 echo $users -> checkUserAge();

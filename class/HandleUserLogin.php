@@ -1,10 +1,14 @@
 <?php
+
 namespace UserLogin;
+
 use Details\UserDetails;
+
 class HandleUserLogin extends UserDetails
 {
     private $password;
     private $phone;
+
     public function checkIfRegistered($email)
     {
         //Inherits the user email from UserDetails class
